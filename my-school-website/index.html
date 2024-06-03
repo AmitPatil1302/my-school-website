@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <header class="sidebar-header">
+            <img src="school-logo.png" alt="School Logo" class="logo">
+            <h1 class="school-name">School Name</h1>
+        </header>
+        <button class="toggle-menu" align-items: center>☰</button> <!-- Moved below school name -->
+        <ul class="menu">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="teach.html">Teach</a></li>
+            <li><a href="tests.html">Tests</a></li>
+            <li><a href="take-class.html">Take Class</a></li>
+            <li><a href="video-library.html">Video Library</a></li>
+            <li><a href="doubts.html">Doubts</a></li>
+        </ul>
+    </nav>
+    
+    <main class="content">
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+
+            <!-- Announcements Section -->
+            <div class="dashboard-section">
+                <h3 class="section-header">Announcements</h3>
+                <div class="section-content">
+                    <ul>
+                        <li>School reopens on June 15th</li>
+                        <li>New library books available</li>
+                        <li>Parent-teacher meetings next week</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Recent Activities Section -->
+            <div class="dashboard-section">
+                <h3 class="section-header">Recent Activities</h3>
+                <div class="section-content">
+                    <ul>
+                        <li>Science fair held on May 20th</li>
+                        <li>Sports day results announced</li>
+                        <li>New art exhibit in the main hall</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Upcoming Events Section -->
+            <div class="dashboard-section">
+                <h3 class="section-header">Upcoming Events</h3>
+                <div class="section-content">
+                    <ul>
+                        <li>Summer camp starting on July 1st</li>
+                        <li>Math Olympiad on June 25th</li>
+                        <li>Annual day celebration on August 12th</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelector('.toggle-menu').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
